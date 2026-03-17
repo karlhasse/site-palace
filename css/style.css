@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'Ranua';
+  src: url('../fonts/Ranua-Heavy.woff2') format('woff2'),
+       url('../fonts/Ranua-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: block;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Ranua', 'Arial Black', sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ── Title Bar ── */
+.title-bar {
+  width: 100%;
+  background: #fff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.title-bar h1 {
+  font-family: 'Ranua', 'Arial Black', sans-serif;
+  font-weight: 900;
+  font-size: 10vw;
+  line-height: 0.85;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+}
+
+.title-bar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ── Split Layout ── */
+.split-container {
+  display: flex;
+  height: calc(100vh - 10vw);
+  width: 100%;
+  position: relative;
+}
+
+.panel {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* State A: text-left (white), photo-right (black) */
+.state-a .panel-left {
+  background: #fff;
+}
+.state-a .panel-right {
+  background: #0a0a0a;
+}
+.state-a .panel-left .text-content {
+  display: flex;
+}
+.state-a .panel-left .photo-content {
+  display: none;
+}
+.state-a .panel-right .text-content {
+  display: none;
+}
+.state-a .panel-right .photo-content {
+  display: flex;
+}
+
+/* State B: photo-left (black), text-right (white) */
+.state-b .panel-left {
+  background: #0a0a0a;
+}
+.state-b .panel-right {
+  background: #fff;
+}
+.state-b .panel-left .text-content {
+  display: none;
+}
+.state-b .panel-left .photo-content {
+  display: flex;
+}
+.state-b .panel-right .text-content {
+  display: flex;
+}
+.state-b .panel-right .photo-content {
+  display: none;
+}
+
+/* ── Text Content ── */
+.text-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  gap: 4px;
+}
+
+.state-a .text-content {
+  color: #000;
+}
+.state-b .text-content {
+  color: #000;
+}
+
+.text-content .venue {
+  font-size: clamp(13px, 1.4vw, 18px);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+.text-content .separator {
+  font-size: clamp(12px, 1.2vw, 16px);
+  line-height: 1.8;
+  opacity: 0.7;
+}
+
+.text-content .exhibition {
+  font-size: clamp(13px, 1.4vw, 18px);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+.text-content .date {
+  font-size: clamp(13px, 1.4vw, 18px);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+/* ── Photo Content ── */
+.photo-content {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-content img {
+  max-height: 65vh;
+  max-width: 70%;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ── Information Link ── */
+.info-link {
+  position: fixed;
+  bottom: 16px;
+  right: 20px;
+  font-family: 'Ranua', 'Arial Black', sans-serif;
+  font-weight: 900;
+  font-size: clamp(11px, 1vw, 14px);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.state-a .info-link {
+  color: #fff;
+}
+.state-b .info-link {
+  color: #000;
+}
+
+/* ── Information Page ── */
+.info-page {
+  min-height: 100vh;
+  background: #fff;
+  overflow: auto;
+  cursor: default;
+}
+
+.info-page .title-bar {
+  cursor: pointer;
+}
+
+.info-body {
+  padding: 40px 12px 60px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000;
+  max-width: 700px;
+}
+
+.info-body p {
+  margin-bottom: 1.4em;
+}
+
+.info-body a {
+  color: #000;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .split-container {
+    flex-direction: column;
+    height: calc(100vh - clamp(44px, 10vw, 80px));
+  }
+
+  .panel {
+    width: 100%;
+    height: 50%;
+  }
+
+  .photo-content img {
+    max-height: 35vh;
+    max-width: 85%;
+  }
+
+  .text-content .venue,
+  .text-content .exhibition,
+  .text-content .date {
+    font-size: clamp(11px, 3vw, 15px);
+  }
+
+  .info-link {
+    bottom: 10px;
+    right: 12px;
+  }
+}
