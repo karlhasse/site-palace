@@ -12,5 +12,19 @@
     "venue": "Weserburg, Bremen",
     "exhibition": "Andrea Bowers – Light and Gravity",
     "date": "September 28, 2019 – February 23, 2020"
+  },
+  {
+    "id": "003",
+    "file": "003.webp",
+    "venue": "Berlinische Galerie, Berlin",
+    "exhibition": "Faces of the 1920s",
+    "date": "April 5 – July 29, 2019"
+  },
+  {
+    "id": "004",
+    "file": "004.webp",
+    "venue": "Leopold Museum, Wien",
+    "exhibition": "Oskar Kokoschka – Expressionist, Migrant, Europäer",
+    "date": "April 6 – July 8, 2019"
   }
 ]
