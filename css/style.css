@@ -7,6 +7,15 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: 'Oranienbaum';
+  src: url('../fonts/Oranienbaum-Regular.woff2') format('woff2'),
+       url('../fonts/Oranienbaum-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
 /* ── Reset ── */
 *, *::before, *::after {
   margin: 0;
@@ -176,6 +185,8 @@ body {
 }
 
 .text-content .venue {
+  font-family: 'Oranienbaum', Georgia, serif;
+  font-weight: 400;
   font-size: clamp(13px, 1.4vw, 18px);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -184,6 +195,8 @@ body {
 
 
 .text-content .exhibition {
+  font-family: 'Oranienbaum', Georgia, serif;
+  font-weight: 400;
   font-size: clamp(13px, 1.4vw, 18px);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -191,6 +204,8 @@ body {
 }
 
 .text-content .date {
+  font-family: 'Oranienbaum', Georgia, serif;
+  font-weight: 400;
   font-size: clamp(13px, 1.4vw, 18px);
   text-transform: uppercase;
   letter-spacing: 0.05em;
