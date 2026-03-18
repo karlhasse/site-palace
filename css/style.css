@@ -112,6 +112,46 @@ body {
   display: none;
 }
 
+/* State C: text-left (black bg, white text), photo-right (white bg) */
+.state-c .panel-left {
+  background: #0a0a0a;
+}
+.state-c .panel-right {
+  background: #fff;
+}
+.state-c .panel-left .text-content {
+  display: flex;
+}
+.state-c .panel-left .photo-content {
+  display: none;
+}
+.state-c .panel-right .text-content {
+  display: none;
+}
+.state-c .panel-right .photo-content {
+  display: flex;
+}
+
+/* State D: photo-left (white bg), text-right (black bg, white text) */
+.state-d .panel-left {
+  background: #fff;
+}
+.state-d .panel-right {
+  background: #0a0a0a;
+}
+.state-d .panel-left .text-content {
+  display: none;
+}
+.state-d .panel-left .photo-content {
+  display: flex;
+}
+.state-d .panel-right .text-content {
+  display: flex;
+}
+.state-d .panel-right .photo-content {
+  display: none;
+}
+
 /* ── Text Content ── */
 .text-content {
   flex-direction: column;
@@ -128,6 +168,12 @@ body {
 .state-b .text-content {
   color: #000;
 }
+.state-c .text-content {
+  color: #fff;
+}
+.state-d .text-content {
+  color: #fff;
+}
 
 .text-content .venue {
   font-size: clamp(13px, 1.4vw, 18px);
@@ -136,11 +182,6 @@ body {
   line-height: 1.3;
 }
 
-.text-content .separator {
-  font-size: clamp(12px, 1.2vw, 16px);
-  line-height: 1.8;
-  opacity: 0.7;
-}
 
 .text-content .exhibition {
   font-size: clamp(13px, 1.4vw, 18px);
@@ -194,6 +235,12 @@ body {
 }
 .state-b .info-link {
   color: #000;
+}
+.state-c .info-link {
+  color: #000;
+}
+.state-d .info-link {
+  color: #fff;
 }
 
 /* ── Information Page ── */

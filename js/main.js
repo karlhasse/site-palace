@@ -52,7 +52,8 @@
   // ── Gallery Logic (main page only) ──
   var images = [];
   var currentIndex = -1;
-  var state = 'a';
+  var states = ['a', 'b', 'c', 'd'];
+  var stateIndex = 0;
 
   var body = document.body;
   var photoEls = document.querySelectorAll('.photo-content img');
@@ -88,9 +89,9 @@
   }
 
   function toggleState() {
-    state = state === 'a' ? 'b' : 'a';
-    body.classList.remove('state-a', 'state-b');
-    body.classList.add('state-' + state);
+    stateIndex = (stateIndex + 1) % states.length;
+    body.classList.remove('state-a', 'state-b', 'state-c', 'state-d');
+    body.classList.add('state-' + states[stateIndex]);
   }
 
   function next() {
