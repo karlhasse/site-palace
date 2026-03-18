@@ -54,5 +54,54 @@
     "venue": "C/O, Berlin",
     "exhibition": "Food for the Eyes – The Story of Food in Photography",
     "date": "June 8 – September 7, 2019"
+  },
+  {
+    "id": "009",
+    "file": "009.webp",
+    "venue": "Gropius Bau, Berlin",
+    "exhibition": "Garden of Earthly Delights",
+    "date": "July 26 – December 1, 2019"
+  },
+  {
+    "id": "010",
+    "file": "010.webp",
+    "venue": "German Historical Museum, Berlin",
+    "exhibition": "Weimar: Vom Wesen und Wert der Demokratie",
+    "date": "April 4 – September 22, 2019"
+  },
+  {
+    "id": "011",
+    "file": "011.webp",
+    "venue": "Friedrichshain-Kreuzberg Museum, Berlin",
+    "exhibition": "Labor 89. Neue Perspektiven auf die Wendezeit",
+    "date": "January 24 – May 24, 2020"
+  },
+  {
+    "id": "012",
+    "file": "012.webp",
+    "venue": "Hamburger Bahnhof – Nationalgalerie der Gegenwart",
+    "exhibition": "Cevdet Erek. Bergama Stereo Works of Music by Visual Artists",
+    "date": "October 19, 2019 – March 8, 2020"
+  },
+  {
+    "id": "013",
+    "file": "013.webp",
+    "venue": "Haus der Kulturen der Welt, Berlin",
+    "exhibition": "Love and Ethnology – The Colonial Dialectic of Sensitivity (after Hubert Fichte)",
+    "date": "October 18, 2019 – January 6, 2020"
+  },
+  {
+    "id": "014",
+    "file": "014.webp",
+    "venue": "KINDL – Centre for Contemporary Art, Berlin",
+    "exhibition": "Bettina Pousttchi – Panorama",
+    "date": "September 1, 2019 – May 10, 2020"
+  },
+  {
+    "id": "015",
+    "file": "015.webp",
+    "venue": "Kunstgewerbemuseum, Berlin",
+    "exhibition": "Connecting Afro Futures. Fashion x Hair x Design",
+    "date": "August 24 – December 1, 2019"
   }
 ]
