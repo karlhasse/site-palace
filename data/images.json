@@ -33,5 +33,26 @@
     "venue": "Museu d'Art Contemporani, Barcelona",
     "exhibition": "Coco Fusco. I Learned to Swim on Dry Land",
     "date": "May 23, 2025 – January 11, 2026"
+  },
+  {
+    "id": "006",
+    "file": "006.webp",
+    "venue": "Moco Museum, Barcelona",
+    "exhibition": "Modern Masters Barcelona – Meet the Icons of Modern Art",
+    "date": "Permanent"
+  },
+  {
+    "id": "007",
+    "file": "007.webp",
+    "venue": "Museu Picasso, Barcelona",
+    "exhibition": "Permanent",
+    "date": "Permanent"
+  },
+  {
+    "id": "008",
+    "file": "008.webp",
+    "venue": "C/O, Berlin",
+    "exhibition": "Food for the Eyes – The Story of Food in Photography",
+    "date": "June 8 – September 7, 2019"
   }
 ]
